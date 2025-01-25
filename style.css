@@ -95,3 +95,25 @@ body {
     background-color: #f0f0f0; /* Fondo al pasar el cursor */
     color: #007BFF; /* Color del texto al pasar el cursor */
 }
+/* Botones adicionales */
+.botones {
+    text-align: center; /* Centra los botones */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #bcbec0; /* Color de fondo */
+    color: rgb(34, 34, 51); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 5px; /* Espacio entre los botones */
+    transition: background-color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.btn:hover {
+    background-color: rgb(34, 34, 51); /* Fondo al pasar el cursor */
+    color: white; /* Texto blanco al pasar el cursor */
+}
