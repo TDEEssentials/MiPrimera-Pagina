@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-image: url('fondo.jpg'); /* Asegúrate de que el nombre sea correcto */
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Opcional: fija el fondo al hacer scroll */
+    font-family: Arial, sans-serif; /* Mantiene el estilo de la fuente */
+    color: white; /* Ajusta el color del texto si es necesario */
     margin: 0;
     padding: 0;
 }
