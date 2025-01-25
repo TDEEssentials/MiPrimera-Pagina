@@ -219,3 +219,22 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
+/* Botón para volver a la página principal */
+.back-to-home {
+    position: fixed;
+    bottom: 20px; /* Posición desde abajo */
+    left: 20px; /* Posición desde la izquierda */
+    background-color: #007BFF; /* Fondo azul */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de letra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #0056b3; /* Fondo más oscuro al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
