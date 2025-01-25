@@ -1,5 +1,12 @@
 body {
-    
+    background-image: url('fondo.jpg'); /* Asegúrate de que el nombre sea correcto */
+    background-size: contain; /* La imagen conservará su tamaño original o se ajustará al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center top; /* Coloca la imagen en el centro y arriba de la pantalla */
+    background-attachment: fixed; /* Fija el fondo al hacer scroll (opcional) */
+    font-family: Arial, sans-serif; /* Mantiene el estilo del texto */
+    margin: 0;
+    padding: 0;
     
 }
 header {
