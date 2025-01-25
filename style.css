@@ -25,7 +25,7 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: #007BFF; /* Color de fondo del botón */
+    background-color: #bcbec0; /* Color de fondo del botón */
     color: rgb(34, 34, 51); /* Color del texto */
     text-decoration: none; /* Quita el subrayado del enlace */
     padding: 10px 20px; /* Tamaño del botón */
