@@ -1,6 +1,12 @@
 body {
     
-
+    background-size: contain; /* La imagen conservará su tamaño original o se ajustará al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center top; /* Coloca la imagen en el centro y arriba de la pantalla */
+    background-attachment: fixed; /* Fija el fondo al hacer scroll (opcional) */
+    font-family: Arial, sans-serif; /* Mantiene el estilo del texto */
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #0f1011;
@@ -9,12 +15,5 @@ header {
     text-align: center;
 }
 body {
-    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu archivo */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen mientras haces scroll */
-    font-family: Arial, sans-serif; /* Mantiene el estilo de fuente */
-    color: white; /* Cambia el color del texto para que sea visible sobre el fondo */
-    margin: 0;
-    padding: 0;
+    
 }
