@@ -4,14 +4,14 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Coloca la imagen en el centro de la pantalla */
     background-attachment: fixed; /* Fija el fondo al hacer scroll */
-    font-family: Arial, sans-serif;
+    font-family: Boucherie Block, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
 header {
-    background-color: #0f1011;
-    color: rgb(240, 9, 240);
+    background-color: #bcbec0;
+    color: rgb(34, 34, 51);
     padding: 20px;
     text-align: center;
 }
