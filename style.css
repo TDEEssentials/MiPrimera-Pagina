@@ -18,3 +18,23 @@ header {
 body {
     
 }
+.botones {
+    text-align: center; /* Centra los botones en la página */
+    margin-top: 20px; /* Añade espacio encima */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: rgb(34, 34, 51); /* Color del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 5px; /* Espacio entre botones */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.btn:hover {
+    background-color: rgb(34, 34, 51); /* Color al pasar el cursor */
+}
