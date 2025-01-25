@@ -88,13 +88,14 @@ body {
 }
 
 .menu-content a:last-child {
-    border-bottom: none; /* Sin línea en el último enlace */
+    font-weight: bold; /* Hace los últimos enlaces más destacados */
+    color: #007BFF; /* Color azul para los botones adicionales */
 }
 
-.menu-content a:hover {
-    background-color: #f0f0f0; /* Fondo al pasar el cursor */
-    color: #007BFF; /* Color del texto al pasar el cursor */
+.menu-content a:last-child:hover {
+    background-color: #e6f7ff; /* Fondo más claro al pasar el cursor */
 }
+
 /* Botones adicionales */
 .botones {
     text-align: center; /* Centra los botones */
