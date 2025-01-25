@@ -1,6 +1,6 @@
 body {
     background-image: url('fondo.jpg'); /* Imagen de fondo */
-    background-size: 100px; /* Define un tamaño fijo: 150px de ancho */
+    background-size: 120px; /* Define un tamaño fijo: 150px de ancho */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Coloca la imagen en el centro de la pantalla */
     background-attachment: fixed; /* Fija el fondo al hacer scroll */
