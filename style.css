@@ -305,3 +305,70 @@ form button:hover {
     }
 }
 
+/* Fondo personalizado */
+body {
+    background-image: url('gente.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    color: #333; /* Color del texto */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.header-content h1 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Botones de categorías */
+.categorias {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta los botones en filas si son muchos */
+    justify-content: center; /* Centra los botones */
+    margin: 20px auto;
+    gap: 15px; /* Espaciado entre botones */
+}
+
+.categoria-btn {
+    background-color: #A4D3A2; /* Verde pastel */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.categoria-btn:hover {
+    background-color: #86B686; /* Verde más oscuro al pasar el cursor */
+}
+
+/* Subtítulo y descripción */
+.descripcion {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black; /* Letras negras */
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
