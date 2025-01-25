@@ -89,7 +89,7 @@ body {
 
 .menu-content a:last-child {
     font-weight: bold; /* Hace los últimos enlaces más destacados */
-    color: #007BFF; /* Color azul para los botones adicionales */
+    color: #333; /* Color azul para los botones adicionales */
 }
 
 .menu-content a:last-child:hover {
