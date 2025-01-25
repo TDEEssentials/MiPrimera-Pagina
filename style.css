@@ -117,3 +117,6 @@ body {
     background-color: rgb(34, 34, 51); /* Fondo al pasar el cursor */
     color: white; /* Texto blanco al pasar el cursor */
 }
+.botones {
+    display: block !important; /* Asegura que el contenedor sea visible */
+}
