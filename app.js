@@ -13,3 +13,51 @@ document.addEventListener('click', (event) => {
         menuContent.style.display = 'none'; // Oculta el menú
     }
 });
+// Variables para el carrito
+const cartBtn = document.getElementById('cart-btn');
+const cartDetails = document.getElementById('cart-details');
+const cartItems = document.getElementById('cart-items');
+const totalPrice = document.getElementById('total-price');
+
+// Datos del carrito (simulados para iniciar)
+let cart = [
+    { name: 'Ropa Deportiva', quantity: 2, price: 15000 },
+    { name: 'Street Wear', quantity: 1, price: 20000 },
+    { name: 'Suplementos y Vitaminas', quantity: 3, price: 10000 },
+];
+
+// Muestra u oculta el carrito al hacer clic en el botón
+cartBtn.addEventListener('click', () => {
+    cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
+    renderCart();
+});
+
+// Renderiza el carrito en el HTML
+function renderCart() {
+    cartItems.innerHTML = ''; // Limpia el contenido previo
+    let total = 0;
+
+    cart.forEach((item) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} (x${item.quantity}) - $${item.quantity * item.price}`;
+        cartItems.appendChild(itemElement);
+        total += item.quantity * item.price;
+    });
+
+    totalPrice.innerHTML = `<strong>Total: $${total}</strong>`;
+}
+
+// Inicializa el carrito al cargar la página
+renderCart();
+// Añade productos al carrito
+function addToCart(name, price) {
+    const existingItem = cart.find((item) => item.name === name);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ name, quantity: 1, price });
+    }
+
+    renderCart();
+}

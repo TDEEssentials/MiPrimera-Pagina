@@ -121,3 +121,47 @@ body {
 .botones {
     display: block !important; /* Asegura que el contenedor sea visible */
 }
+/* Botón del carrito */
+.cart-btn {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del icono */
+    border: none; /* Sin borde */
+    padding: 15px; /* Tamaño del botón */
+    border-radius: 50%; /* Botón redondo */
+    font-size: 20px; /* Tamaño del icono */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-left: auto; /* Empuja el carrito a la derecha */
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #555; /* Cambia el color al pasar el cursor */
+}
+
+/* Detalle del carrito */
+.cart-details {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 70px; /* Debajo del encabezado */
+    right: 20px; /* Alineado con el botón */
+    background-color: white; /* Fondo del carrito */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 300px; /* Ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 15px; /* Espaciado interno */
+    z-index: 1000; /* Encima de otros elementos */
+}
+
+/* Títulos y texto del carrito */
+.cart-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cart-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: right;
+}
