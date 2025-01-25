@@ -105,3 +105,13 @@ menuBtn.addEventListener('click', () => {
         menuContent.style.display = 'block';
     }
 });
+// Variables
+const introScreen = document.getElementById('intro-screen');
+const mainContent = document.getElementById('main-content');
+const enterButton = document.getElementById('enter-button');
+
+// Evento para ocultar la pantalla de introducción y mostrar el contenido principal
+enterButton.addEventListener('click', () => {
+    introScreen.style.display = 'none'; // Oculta la pantalla de introducción
+    mainContent.style.display = 'block'; // Muestra el contenido principal
+});

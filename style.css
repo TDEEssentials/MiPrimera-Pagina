@@ -249,9 +249,8 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Encima de todo */
+    z-index: 9999; /* Máximo nivel */
     color: white;
-    overflow: hidden;
 }
 
 /* Contenedor del contenido de introducción */
@@ -282,7 +281,7 @@ form button:hover {
 /* Botón de ingresar */
 .intro-button {
     margin-top: 20px;
-    padding: 5px 15px; /* Botón compacto */
+    padding: 5px 15px;
     font-size: 12px;
     color: white;
     background-color: red;
@@ -290,7 +289,11 @@ form button:hover {
     border-radius: 5px;
     cursor: pointer;
     opacity: 0;
-    animation: show-button 1s 2.5s forwards; /* Aparece medio segundo después del texto */
+    animation: show-button 1s 2.5s forwards; /* Aparece después del texto */
+}
+
+.intro-button:hover {
+    background-color: darkred;
 }
 
 /* Animación para mostrar el botón */
