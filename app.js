@@ -61,3 +61,26 @@ function addToCart(name, price) {
 
     renderCart();
 }
+// Selecciona el botón de finalizar compra
+const finalizeBtn = document.getElementById('finalize-btn');
+
+// Evento para abrir la página de finalizar compra
+finalizeBtn.addEventListener('click', () => {
+    window.location.href = 'finalizar-compra.html'; // Redirige a la nueva página
+});
+// Renderiza los detalles de la compra en "finalizar-compra.html"
+if (window.location.pathname.endsWith('finalizar-compra.html')) {
+    const purchaseDetails = document.getElementById('purchase-details');
+
+    let total = 0;
+    cart.forEach((item) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} (x${item.quantity}) - $${item.quantity * item.price}`;
+        purchaseDetails.appendChild(itemElement);
+        total += item.quantity * item.price;
+    });
+
+    const totalElement = document.createElement('p');
+    totalElement.innerHTML = `<strong>Total: $${total}</strong>`;
+    purchaseDetails.appendChild(totalElement);
+}

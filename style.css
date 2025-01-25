@@ -143,3 +143,79 @@ body {
     margin: 10px 0;
     text-align: right;
 }
+/* Encabezado de columnas en el carrito */
+.cart-items-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Producto, Cantidad, Precio */
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Detalles de los productos en el carrito */
+#cart-items div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Producto, Cantidad, Precio */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botón de finalizar compra */
+#finalize-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Ancho completo */
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+#finalize-btn:hover {
+    background-color: #0056b3;
+}
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
