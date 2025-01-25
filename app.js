@@ -94,3 +94,14 @@ enterButton.addEventListener('click', () => {
     introScreen.style.display = 'none'; // Oculta la pantalla de introducción
     mainContent.style.display = 'block'; // Muestra el contenido principal
 });
+// Funcionalidad del botón de menú
+const menuBtn = document.getElementById('menu-btn');
+const menuContent = document.getElementById('menu-content');
+
+menuBtn.addEventListener('click', () => {
+    if (menuContent.style.display === 'block') {
+        menuContent.style.display = 'none';
+    } else {
+        menuContent.style.display = 'block';
+    }
+});
