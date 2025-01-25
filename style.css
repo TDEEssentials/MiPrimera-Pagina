@@ -9,19 +9,40 @@ body {
     padding: 0;
     color: #333;
 }
-/* Encabezado para contener el botón del menú */
+/* Encabezado */
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaciado entre el botón y el contenido */
     background-color: #bcbec0; /* Color de fondo del encabezado */
-    padding: 10px 20px; /* Espaciado dentro del encabezado */
+    padding: 10px 20px; /* Espaciado interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra debajo del encabezado */
     position: fixed; /* Fija el encabezado en la parte superior */
     top: 0;
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
-    z-index: 1000; /* Se asegura de estar encima de otros elementos */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+/* Contenedor del contenido del encabezado */
+.header-content {
+    text-align: center; /* Centra el texto */
+    margin-left: 20px; /* Añade espacio entre el botón y el texto */
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+/* Título principal */
+.header-content h1 {
+    font-size: 24px; /* Tamaño del texto del título */
+    color: rgb(34, 34, 51); /* Color del texto */
+    margin: 0; /* Quita márgenes */
+}
+
+/* Subtítulo */
+.header-content p {
+    font-size: 16px; /* Tamaño del texto del subtítulo */
+    color: rgb(60, 60, 60); /* Color más claro para el subtítulo */
+    margin: 5px 0 0; /* Espaciado superior */
 }
 
 /* Botón del menú */
