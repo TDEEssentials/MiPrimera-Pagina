@@ -262,7 +262,8 @@ form button:hover {
 /* Texto principal con animación */
 .intro-text {
     font-size: 0px;
-    animation: grow-text 2s ease-in-out forwards;
+    white-space: nowrap; /* Evita que el texto salte a una nueva línea */
+    animation: grow-text 2s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; /* Transición más fluida */
 }
 
 /* Animación de crecimiento del texto */
@@ -271,39 +272,36 @@ form button:hover {
         font-size: 0px;
         opacity: 0;
     }
-    50% {
-        font-size: 50px; /* Tamaño intermedio */
-        opacity: 1;
-    }
     100% {
-        font-size: 100px; /* Tamaño final más grande */
+        font-size: 70px; /* Tamaño final ajustado */
         opacity: 1;
     }
 }
 
+
 /* Botón de ingresar */
 .intro-button {
     margin-top: 20px;
-    padding: 5px 15px; /* Botón más compacto */
-    font-size: 12px; /* Texto más pequeño */
+    padding: 5px 15px; /* Botón compacto */
+    font-size: 12px;
     color: white;
     background-color: red;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0; /* Invisible inicialmente */
-    animation: show-button 1s 2s forwards; /* Aparece después de 2 segundos */
+    opacity: 0;
+    animation: show-button 1s 2.5s forwards; /* Aparece medio segundo después del texto */
 }
-
 
 /* Animación para mostrar el botón */
 @keyframes show-button {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Empieza desplazado hacia abajo */
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Regresa a su posición original */
+        transform: translateY(0);
     }
 }
+
