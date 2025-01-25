@@ -11,3 +11,13 @@ header {
     padding: 20px;
     text-align: center;
 }
+body {
+    background-image: url('fondo.jpeg'); /* Cambia 'fondo.jpg' por el nombre de tu archivo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen mientras haces scroll */
+    font-family: Arial, sans-serif; /* Mantiene el estilo de fuente */
+    color: white; /* Cambia el color del texto para que sea visible sobre el fondo */
+    margin: 0;
+    padding: 0;
+}
