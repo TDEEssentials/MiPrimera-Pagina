@@ -272,11 +272,11 @@ form button:hover {
         opacity: 0;
     }
     50% {
-        font-size: 30px;
+        font-size: 50px; /* Tamaño intermedio */
         opacity: 1;
     }
     100% {
-        font-size: 50px; /* Tamaño final */
+        font-size: 100px; /* Tamaño final más grande */
         opacity: 1;
     }
 }
@@ -284,8 +284,8 @@ form button:hover {
 /* Botón de ingresar */
 .intro-button {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 5px 15px; /* Botón más compacto */
+    font-size: 12px; /* Texto más pequeño */
     color: white;
     background-color: red;
     border: none;
@@ -294,6 +294,7 @@ form button:hover {
     opacity: 0; /* Invisible inicialmente */
     animation: show-button 1s 2s forwards; /* Aparece después de 2 segundos */
 }
+
 
 /* Animación para mostrar el botón */
 @keyframes show-button {
