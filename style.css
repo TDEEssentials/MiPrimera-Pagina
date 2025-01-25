@@ -38,3 +38,54 @@ body {
 .btn:hover {
     background-color: rgb(34, 34, 51); /* Color al pasar el cursor */
 }
+/* Contenedor del menú */
+.menu {
+    position: absolute;
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición izquierda */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+
+/* Botón del menú */
+.menu-btn {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del icono */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño del icono */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.menu-btn:hover {
+    background-color: #555; /* Cambia el color al pasar el cursor */
+}
+
+/* Contenedor del menú desplegable */
+.menu-content {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Debajo del botón */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Ancho del menú */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo de los enlaces del menú */
+.menu-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0; /* Fondo al pasar el cursor */
+    color: #007BFF; /* Texto azul */
+}
