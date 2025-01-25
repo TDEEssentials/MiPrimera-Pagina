@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 body {
-    background-image: url('fondo.jpeg'); /* Cambia 'fondo.jpg' por el nombre de tu archivo */
+    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu archivo */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen mientras haces scroll */
