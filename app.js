@@ -17,7 +17,7 @@ let cart = [
     { name: 'Suplementos y Vitaminas', quantity: 3, price: 10000 },
 ];
 
-// 1. FUNCIONALIDAD DEL BOTÓN INGRESAR
+// FUNCIONALIDAD DEL BOTÓN INGRESAR
 enterButton.addEventListener('click', () => {
     console.log("Botón INGRESAR clickeado"); // Depuración
     introScreen.style.display = 'none'; // Oculta la pantalla de introducción
@@ -39,7 +39,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-// 3. FUNCIONALIDAD DEL CARRITO
+// FUNCIONALIDAD DEL CARRITO
 cartBtn.addEventListener('click', () => {
     cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
     renderCart();
