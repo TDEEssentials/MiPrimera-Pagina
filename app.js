@@ -115,3 +115,8 @@ enterButton.addEventListener('click', () => {
     introScreen.style.display = 'none'; // Oculta la pantalla de introducción
     mainContent.style.display = 'block'; // Muestra el contenido principal
 });
+enterButton.addEventListener('click', () => {
+    console.log("Botón INGRESAR clickeado"); // Verifica si el evento ocurre
+    introScreen.style.display = 'none'; // Oculta la pantalla de introducción
+    mainContent.style.display = 'block'; // Muestra el contenido principal
+});
