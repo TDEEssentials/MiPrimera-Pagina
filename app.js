@@ -84,21 +84,20 @@ if (window.location.pathname.endsWith('finalizar-compra.html')) {
     totalElement.innerHTML = `<strong>Total: $${total}</strong>`;
     purchaseDetails.appendChild(totalElement);
 }
-// Selecciona los elementos
+// Seleccionar elementos
 const introScreen = document.getElementById('intro-screen');
 const mainContent = document.getElementById('main-content');
 const enterButton = document.getElementById('enter-button');
 
 // Evento para el botón INGRESAR
 enterButton.addEventListener('click', () => {
-    introScreen.style.display = 'none'; // Oculta la pantalla de introducción
-    mainContent.style.display = 'block'; // Muestra el contenido principal
+    // Oculta la pantalla de introducción
+    introScreen.style.display = 'none';
+    // Muestra el contenido principal
+    mainContent.style.display = 'block';
+    console.log("Pantalla de introducción oculta, mostrando contenido principal"); // Depuración
 });
-// Evento para ocultar la pantalla de introducción y mostrar el contenido principal
-enterButton.addEventListener('click', () => {
-    introScreen.style.display = 'none'; // Oculta la pantalla de introducción
-    mainContent.style.display = 'block'; // Muestra el contenido principal
-});
+
 // Funcionalidad del botón de menú
 const menuBtn = document.getElementById('menu-btn');
 const menuContent = document.getElementById('menu-content');
@@ -121,7 +120,8 @@ enterButton.addEventListener('click', () => {
     mainContent.style.display = 'block'; // Muestra el contenido principal
 });
 enterButton.addEventListener('click', () => {
-    console.log("Botón INGRESAR clickeado"); // Verifica si el evento ocurre
-    introScreen.style.display = 'none'; // Oculta la pantalla de introducción
-    mainContent.style.display = 'block'; // Muestra el contenido principal
+    console.log("Botón INGRESAR clickeado");
+    introScreen.style.display = 'none';
+    mainContent.style.display = 'block';
 });
+
