@@ -277,23 +277,22 @@ form button:hover {
     }
 }
 
-
-/* Botón de ingresar */
+/* Botón INGRESAR */
 .intro-button {
     margin-top: 20px;
-    padding: 5px 15px;
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: 14px;
     color: white;
     background-color: red;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0;
-    animation: show-button 1s 2.5s forwards; /* Aparece después del texto */
+    opacity: 1;
 }
 
 .intro-button:hover {
     background-color: darkred;
+}
 }
 
 /* Animación para mostrar el botón */
