@@ -438,22 +438,23 @@ body {
     color: #555;
 }
 .volver-container {
-    text-align: center;
-    margin-top: 20px; /* Espacio debajo del encabezado */
+    text-align: left; /* Alinea el botón a la izquierda */
+    margin: 20px 20px 0; /* Espaciado superior y lateral */
 }
 
 .volver-btn {
     background-color: #A8D5BA; /* Verde pastel */
     color: white;
     border: none;
-    padding: 8px 12px; /* Tamaño más pequeño */
+    padding: 10px 15px; /* Tamaño del botón */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer;
-    font-size: 14px; /* Tamaño de fuente reducido */
+    font-size: 14px; /* Tamaño del texto */
     transition: background-color 0.3s ease;
 }
 
 .volver-btn:hover {
     background-color: #86C29D; /* Verde más oscuro al pasar el cursor */
 }
+
 
