@@ -256,7 +256,12 @@ form button:hover {
 /* Contenedor del contenido de introducción */
 .intro-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Texto principal con animación */
 .intro-text {
@@ -287,14 +292,13 @@ form button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0; /* Invisible inicialmente */
+    animation: show-button 1s 2s forwards; /* Aparece después de 2 segundos */
 }
 
 .intro-button:hover {
     background-color: darkred;
 }
-}
-
 /* Animación para mostrar el botón */
 @keyframes show-button {
     0% {
@@ -306,6 +310,7 @@ form button:hover {
         transform: translateY(0);
     }
 }
+
 
 /* Fondo personalizado */
 body {
