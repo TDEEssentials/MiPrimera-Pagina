@@ -24,7 +24,10 @@ enterButton.addEventListener('click', () => {
     mainContent.style.display = 'block'; // Muestra el contenido principal
 });
 
-// 2. FUNCIONALIDAD DEL MENÚ DESPLEGABLE
+// Funcionalidad del menú desplegable
+const menuBtn = document.getElementById('menu-btn');
+const menuContent = document.getElementById('menu-content');
+
 menuBtn.addEventListener('click', () => {
     menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
 });
