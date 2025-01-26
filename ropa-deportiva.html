@@ -9,24 +9,31 @@
 <body>
     <!-- Encabezado -->
     <div class="header">
-        <button class="menu-btn" id="menu-btn">
-            &#9776; <!-- Icono de menú -->
-        </button>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
         <div class="header-content">
             <h1>Ropa Deportiva</h1>
         </div>
     </div>
-
-    <!-- Botones de categorías -->
-    <div class="categorias">
-        <button class="categoria-btn">Poleras</button>
-        <button class="categoria-btn">Polerones</button>
-        <button class="categoria-btn">Pantalones</button>
-        <button class="categoria-btn">Shorts</button>
-        <button class="categoria-btn">Leggins</button>
-        <button class="categoria-btn">Chaquetas</button>
-        <button class="categoria-btn">Accesorios</button>
+    
+    <div class="menu-content" id="menu-content">
+        <a href="index.html">Página Principal</a>
+        <a href="#poleras">Poleras</a>
+        <a href="#polerones">Polerones</a>
+        <a href="#chaquetas">Chaquetas</a>
+        <a href="#pantalones">Pantalones y Shorts</a>
+        <a href="#calzas">Calzas</a>
+        <a href="#accesorios">Accesorios</a>
     </div>
+    
+    <div class="categorias">
+        <button class="categoria-btn" onclick="window.location.href='poleras.html'">POLERAS</button>
+        <button class="categoria-btn" onclick="window.location.href='polerones.html'">POLERONES</button>
+        <button class="categoria-btn" onclick="window.location.href='chaquetas.html'">CHAQUETAS</button>
+        <button class="categoria-btn" onclick="window.location.href='pantalones.html'">PANTALONES Y SHORTS</button>
+        <button class="categoria-btn" onclick="window.location.href='calzas.html'">CALZAS</button>
+        <button class="categoria-btn" onclick="window.location.href='accesorios.html'">ACCESORIOS</button>
+    </div>
+    
 
     <!-- Subtítulo y descripción -->
     <div class="descripcion">
