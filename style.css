@@ -397,9 +397,11 @@ body {
 .categorias {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos botones por fila */
-    gap: 20px; /* Espaciado entre botones */
+    gap: 20px; /* Espaciado entre los botones */
     justify-content: center;
-    margin: 30px 20px;
+    align-items: center;
+    margin: 50px 20px; /* Aumenta el espacio superior */
+    padding-top: 50px; /* Espacio adicional para que no queden tapados */
 }
 
 .categoria-btn {
@@ -416,5 +418,39 @@ body {
 }
 
 .categoria-btn:hover {
+    background-color: #86C29D; /* Verde más oscuro al pasar el cursor */
+}
+.mensaje {
+    text-align: center;
+    margin-top: 80px; /* Aumenta espacio desde el encabezado */
+    font-family: Arial, sans-serif;
+}
+
+.mensaje h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mensaje p {
+    font-size: 16px;
+    color: #555;
+}
+.volver-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #A8D5BA; /* Verde pastel */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-btn:hover {
     background-color: #86C29D; /* Verde más oscuro al pasar el cursor */
 }
